@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Feuilles de style -->
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
   <link rel="shortcut icon" type="image/x-icon" href="image/WhatsApp-Image-2025-03-18-à-10.18.42_b54fb96c.ico">
 </head>
 <body>
@@ -79,7 +79,7 @@
       </h1>
 
       <p class="hero-subtitle">
-        <span class="terminal-cursor">&gt;_</span>Étudiant B1 <strong>EPSI</strong> &bull; Socle <strong>Systèmes &amp; Réseaux</strong> &bull; Vocation <strong>Cybersécurité</strong>
+        &gt; Étudiant B1 <strong>EPSI</strong> &bull; Socle <strong>Systèmes &amp; Réseaux</strong> &bull; Vocation <strong>Cybersécurité</strong>
       </p>
 
       <p class="hero-bio">
@@ -602,6 +602,49 @@
     });
 
     sections.forEach(section => observer.observe(section));
+
+    // 3. Easter Egg Console F12 (Clin d'œil geek & système discret)
+    console.log(
+      "%c" +
+      "  __  __       _   _     _             ____             \n" +
+      " |  \\/  | __ _| |_| |__ (_) __ _ ___  |  _ \\ __ _  __ _ \n" +
+      " | |\\/| |/ _` | __| '_ \\| |/ _` / __| | |_) / _` |/ _` |\n" +
+      " | |  | | (_| | |_| | | | | (_| \\__ \\ |  _ < (_| | (_| |\n" +
+      " |_|  |_|\\__,_|\\__|_| |_|_|\\__,_|___/ |_| \\_\\__,_|\\__, |\n" +
+      "                                                   |___/ \n" +
+      " > Mathias RAGOT — Étudiant B1 EPSI (Option BTS SIO)\n" +
+      " > Cap : Cybersécurité Défensive & Systèmes\n" +
+      " > GitHub : https://github.com/Math087a\n" +
+      " > Tape 'help()' pour voir les commandes disponibles.",
+      "color: #52b788; font-family: monospace; font-size: 11px; font-weight: bold;"
+    );
+
+    window.help = function() {
+      console.log(
+        "%cCommandes disponibles :\n" +
+        " - contact() : Affiche mes coordonnées directes\n" +
+        " - stage()   : Affiche les dates de ma recherche de stage\n" +
+        " - clear()   : Nettoie la console",
+        "color: #c6a85c; font-family: monospace;"
+      );
+      return "Prêt.";
+    };
+
+    window.contact = function() {
+      console.log(
+        "%cEmail : mathias.ragot@ecoles-epsi.net\nTel   : 06 17 39 08 46\nGitHub: https://github.com/Math087a",
+        "color: #74c69d; font-family: monospace;"
+      );
+      return "Coordonnées de Mathias.";
+    };
+
+    window.stage = function() {
+      console.log(
+        "%cRecherche de stage en Cybersécurité & Systèmes du 19 avril au 16 juin (Montpellier / Nîmes / Télétravail).",
+        "color: #f3d489; font-family: monospace;"
+      );
+      return "Période de stage.";
+    };
   </script>
 </body>
 </html>
