@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Feuilles de style -->
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=12">
   <link rel="shortcut icon" type="image/x-icon" href="image/WhatsApp-Image-2025-03-18-à-10.18.42_b54fb96c.ico">
 </head>
 <body>
@@ -46,13 +46,17 @@
       <span class="nav-dot"></span>
       <span class="nav-tooltip">Parcours &amp; Stages</span>
     </a>
-    <a href="#competences" class="nav-dot-link" data-target="competences" aria-label="Compétences Concrètes">
+    <a href="#atouts" class="nav-dot-link" data-target="atouts" aria-label="Atouts & Méthode">
       <span class="nav-dot"></span>
-      <span class="nav-tooltip">Compétences en B1</span>
+      <span class="nav-tooltip">Atouts &amp; Méthode</span>
+    </a>
+    <a href="#competences" class="nav-dot-link" data-target="competences" aria-label="Pratique Réelle en B1">
+      <span class="nav-dot"></span>
+      <span class="nav-tooltip">Pratique en B1</span>
     </a>
     <a href="#projets" class="nav-dot-link" data-target="projets" aria-label="Projets &amp; Travaux">
       <span class="nav-dot"></span>
-      <span class="nav-tooltip">Projets &amp; Travaux</span>
+      <span class="nav-tooltip">Labs &amp; Projets</span>
     </a>
     <a href="#passions" class="nav-dot-link" data-target="passions" aria-label="Passions">
       <span class="nav-dot"></span>
@@ -224,16 +228,65 @@
 
       <!-- Note discrète pour le stage de 3ème -->
       <div style="margin-top: 2rem; padding: 0.85rem 1.25rem; background: rgba(22, 27, 24, 0.45); border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.8rem; color: var(--text-dim);">
-        <span style="color: var(--text-muted); font-weight: 600;">Première découverte professionnelle :</span> Stage d'observation en mécanique et gestion d'atelier chez <em>Réparcycles</em> (Beauvoisin) — apprentissage du <strong>sens de l'effort</strong>, du <strong>diagnostic méthodique</strong> et du service client.
+        <span style="color: var(--text-muted); font-weight: 600;">Première découverte professionnelle :</span> <strong>Stage d'observation</strong> en mécanique et gestion d'atelier chez <em>Réparcycles</em> (Beauvoisin) — apprentissage du <strong>sens de l'effort</strong>, du <strong>diagnostic méthodique</strong> et du service client.
       </div>
     </section>
 
-    <!-- 4. SECTION COMPÉTENCES CONCRÈTES & ATOUTS -->
+    <!-- 3. SECTION ATOUTS & ÉTAT D'ESPRIT -->
+    <section id="atouts">
+      <div class="section-tag">03 // ÉTAT D'ESPRIT &amp; MÉTHODE</div>
+      <h2 class="section-title">Mes atouts face aux défis techniques</h2>
+      <p class="section-desc">
+        Au-delà des commandes et des protocoles, la réussite d'un projet repose sur la rigueur d'analyse, l'agilité face aux pannes et une méthode de travail éprouvée.
+      </p>
+
+      <div class="infra-grid">
+
+        <!-- Carte 1 : Curiosité technique & Capacité d'analyse -->
+        <div class="card-infra" style="background: rgba(22, 27, 24, 0.95); border-left: 3px solid var(--emerald);">
+          <div class="card-header-icon">
+            <div class="icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-9a1 1 0 0 0-1 1v3.586l-1.707 1.707a1 1 0 0 0 1.414 1.414l2-2A1 1 0 0 0 9 9.5V6a1 1 0 0 0-1-1z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; color: #ffffff;">Curiosité technique &amp; Capacité d'analyse</h3>
+              <p style="font-size: 0.75rem; color: var(--gold);"><strong>Comprendre le fonctionnement profond et persévérer</strong></p>
+            </div>
+          </div>
+          <p class="card-text">
+            Je ne me contente pas d'exécuter une commande sans comprendre. Guidé par une vive <strong>curiosité</strong> et une solide <strong>capacité d'analyse</strong>, j'examine la logique des protocoles et les mécanismes internes. Face à un dysfonctionnement, ma <strong>persévérance</strong> et ma <strong>capacité d'adaptation</strong> me poussent à tester et éprouver chaque solution sur mes <strong>machines virtuelles</strong>, avec le <strong>dynamisme</strong> et l'<strong>esprit d'équipe</strong> nécessaires pour partager mes découvertes.
+          </p>
+        </div>
+
+        <!-- Carte 2 : Architecture IA & Domptage d'agents -->
+        <div class="card-infra" style="background: rgba(22, 27, 24, 0.95); border-left: 3px solid var(--gold);">
+          <div class="card-header-icon">
+            <div class="icon-box" style="background: rgba(198, 168, 92, 0.15); border-color: rgba(198, 168, 92, 0.4); color: var(--gold);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.881a2.75 2.75 0 0 1 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-1.54.773-1.84 1.579a.933.933 0 0 1-.875.617h-2.04a.933.933 0 0 1-.875-.617c-.3-.806-.995-1.432-1.84-1.58A.933.933 0 0 1 3 9.22V8.062ZM1.5 8a4.5 4.5 0 0 1 3.513-4.387A3.75 3.75 0 0 1 11 3.613 4.5 4.5 0 0 1 14.5 8v1.22c0 .94-.64 1.745-1.558 1.905-.443.078-.813.385-.986.792a1.933 1.933 0 0 1-1.808 1.283H6.852a1.933 1.933 0 0 1-1.808-1.283c-.173-.407-.543-.714-.986-.792A1.933 1.933 0 0 1 2.5 9.22V8h-1Z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; color: #ffffff;">Architecture IA &amp; Domptage d'agents</h3>
+              <p style="font-size: 0.75rem; color: var(--gold);"><strong>« L'IA n'est pas un outil, c'est un collaborateur »</strong></p>
+            </div>
+          </div>
+          <p class="card-text">
+            Pour moi, l'IA ne remplace pas la réflexion : elle amplifie l'efficacité si on sait la piloter. Je conçois le <strong>harness</strong> de travail des agents (règles strictes, contexte métier, contraintes de sécurité) et j'<strong>audite rigoureusement chaque livrable</strong>. L'IA accélère la production et l'automatisation, mais la maîtrise de l'<strong>infrastructure système</strong> et l'<strong>esprit critique</strong> restent 100 % humains.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SECTION COMPÉTENCES CONCRÈTES -->
     <section id="competences">
-      <div class="section-tag">03 // PRATIQUE RÉELLE EN B1</div>
+      <div class="section-tag">04 // PRATIQUE RÉELLE EN B1</div>
       <h2 class="section-title">Ce que je pratique concrètement</h2>
       <p class="section-desc">
-        Plutôt que des pourcentages théoriques après quelques mois en formation supérieure, voici un récapitulatif factuel des notions et outils que je manipule au quotidien lors de mes cours et travaux pratiques.
+        L'informatique ne s'apprend pas dans les livres, elle se pratique les mains dans le terminal. Au quotidien à l'<strong>EPSI</strong>, je construis mon socle technique en configurant, testant et sécurisant des environnements réels.
       </p>
 
       <div class="skills-container">
@@ -267,7 +320,7 @@
           </div>
           <div class="card-text" style="font-size: 0.88rem;">
             <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 0.45rem;">&bull; <strong>Modèle OSI &amp; Protocoles :</strong> Compréhension des 7 couches du modèle OSI, segmentation des trames et paquets TCP/IP.</li>
+              <li style="margin-bottom: 0.45rem;">&bull; <strong>Modèle OSI &amp; Protocoles :</strong> Compréhension des 7 couches du <strong>modèle OSI</strong>, segmentation des trames et paquets TCP/IP.</li>
               <li style="margin-bottom: 0.45rem;">&bull; <strong>Virtualisation :</strong> Déploiement et gestion d'hyperviseurs sous <strong>Proxmox VE</strong> et <strong>VMware</strong>.</li>
               <li style="margin-bottom: 0.45rem;">&bull; <strong>Routage &amp; NAT :</strong> Activation du <strong>relayage IP (sysctl ip_forward)</strong> et passerelles locales.</li>
               <li style="margin-bottom: 0.45rem;">&bull; <strong>Configuration réseau :</strong> Paramétrage d'interfaces via <strong>NetworkManager</strong> et <strong>nmcli</strong>.</li>
@@ -286,7 +339,7 @@
           </div>
           <div class="card-text" style="font-size: 0.88rem;">
             <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 0.45rem;">&bull; <strong>Intelligence Artificielle &amp; Prompting :</strong> Maîtrise avancée des agents IA (<strong>Antigravity</strong>, modélisation de code, automatisation de tâches et conception de workflows complexes).</li>
+              <li style="margin-bottom: 0.45rem;">&bull; <strong>Agents IA &amp; Automatisation :</strong> Intégration avancée d'agents (<strong>Antigravity</strong>, assistance au code, conception de workflows et scripts automatisés).</li>
               <li style="margin-bottom: 0.45rem;">&bull; <strong>Obsidian (Expert) :</strong> Prise de notes méthodique de mes cours et TP en <strong>Markdown</strong>, personnalisation de thèmes CSS avancés et structuration des connaissances.</li>
               <li style="margin-bottom: 0.45rem;">&bull; <strong>Git &amp; GitHub :</strong> Versionnage de code rigoureux, gestion de dépôts et hébergement via <strong>GitHub Pages</strong>.</li>
               <li>&bull; <strong>Hardware PC :</strong> Montage complet, diagnostic matériel et optimisation de postes de travail.</li>
@@ -295,34 +348,11 @@
         </div>
 
       </div>
-
-      <!-- FOCUS SUR LES ATOUTS PERSONNELS -->
-      <h3 style="font-size: 1.15rem; color: #ffffff; margin-top: 3rem; margin-bottom: 1rem;">
-        Mes atouts et état d'esprit face aux défis techniques
-      </h3>
-      <div class="infra-grid" style="grid-template-columns: 1fr;">
-        <div class="card-infra" style="background: rgba(22, 27, 24, 0.95); border-left: 3px solid var(--emerald);">
-          <div class="card-header-icon">
-            <div class="icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-9a1 1 0 0 0-1 1v3.586l-1.707 1.707a1 1 0 0 0 1.414 1.414l2-2A1 1 0 0 0 9 9.5V6a1 1 0 0 0-1-1z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 style="font-size: 1.05rem; color: #ffffff;">Curiosité technique poussée &amp; Auto-formation</h4>
-              <p style="font-size: 0.75rem; color: var(--gold);"><strong>Comprendre le fonctionnement profond</strong></p>
-            </div>
-          </div>
-          <p class="card-text">
-            Je ne me contente pas d'exécuter une commande sans comprendre : <strong>j'analyse les mécanismes</strong>, la logique des protocoles et j'<strong>expérimente</strong> sur mes propres <strong>machines virtuelles</strong> pour éprouver chaque notion.
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- 5. SECTION PROJETS & TRAVAUX PRATIQUES -->
     <section id="projets">
-      <div class="section-tag">04 // LABS &amp; RÉALISATIONS</div>
+      <div class="section-tag">05 // LABS &amp; RÉALISATIONS</div>
       <h2 class="section-title">Projets &amp; Travaux Pratiques</h2>
       <p class="section-desc">
         En première année, la formation couvre <strong>les bases dans tous les domaines de l'informatique</strong> : développement logiciel, bases de données, réseaux, systèmes d'exploitation et gestion de projet. Voici des exemples concrets de travaux pratiques réalisés.
@@ -342,7 +372,7 @@
           </div>
           <div class="project-footer">
             <span class="badge-tag"><strong>Rocky Linux &bull; Proxmox</strong></span>
-            <span style="font-size: 0.75rem; color: var(--text-dim);">TP Académique</span>
+            <span class="project-type-tag">TP Académique</span>
           </div>
         </div>
 
@@ -357,7 +387,7 @@
           </div>
           <div class="project-footer">
             <span class="badge-tag"><strong>Apache &bull; Bash &bull; Linux</strong></span>
-            <span style="font-size: 0.75rem; color: var(--text-dim);">TP Académique</span>
+            <span class="project-type-tag">TP Académique</span>
           </div>
         </div>
 
@@ -382,8 +412,8 @@
 
     <!-- 6. SECTION PASSIONS -->
     <section id="passions">
-      <div class="section-tag">05 // CENTRES D'INTÉRÊT</div>
-      <h2 class="section-title">Ce qui me passionne</h2>
+      <div class="section-tag">06 // CENTRES D'INTÉRÊT</div>
+      <h2 class="section-title">Ce qui me passionne (autre que l'informatique)</h2>
       <p class="section-desc">
         Des activités qui développent mon équilibre mental, ma <strong>persévérance</strong> et mon goût pour l'optimisation.
       </p>
@@ -420,7 +450,7 @@
 
     <!-- 7. SECTION CONTACT -->
     <section id="contact">
-      <div class="section-tag">06 // PRENDRE CONTACT</div>
+      <div class="section-tag">07 // PRENDRE CONTACT</div>
       <h2 class="section-title">Discutons d'un stage ou d'une opportunité</h2>
       <p class="section-desc">
         Actuellement à la recherche d'un stage en <strong>Cybersécurité &amp; Systèmes du 19 avril au 16 juin</strong>. N'hésitez pas à me joindre par e-mail ou téléphone !
